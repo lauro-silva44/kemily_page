@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Navbar from "../../components/nav-bar";
 import Lawyer from "../../assets/images/lawyer.png"
+import ContactsButton from "../../components/contacts-button";
 export default function HomeSection() {
   return (
     <section className="home">
@@ -12,7 +13,7 @@ export default function HomeSection() {
           <span>ADVOGADA</span>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
           <div>
-            BUTTON
+          <ContactsButton/>
           </div>
         </div>
         <img src={Lawyer} alt="lawyer" />

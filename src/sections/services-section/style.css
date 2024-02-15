@@ -2,4 +2,18 @@
   height: 100vh;
   width: 100%;
   background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+.grid {
+  height: 100%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 321px);
+  grid-template-rows:repeat(2, 321px);
+  gap: 20px;
+  place-content: center;
 }

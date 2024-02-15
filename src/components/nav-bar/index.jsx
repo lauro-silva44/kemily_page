@@ -1,15 +1,14 @@
 import React from "react";
-import "./styles.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Logo from "../../assets/images/symbol.png";
+import "./styles.css";
 export default function Navbar() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
   return (
     <div className="wrapper">
-      <div className="logo">
-        LOGO
-      </div>
+        <img className="logo" src={Logo} alt="logo" />
       <nav>
         <Link
           to="services"
@@ -21,7 +20,7 @@ export default function Navbar() {
           SERVIÇOS
         </Link>
         <Link
-          to="services"
+          to="cases"
           activeClass="active"
           spy={true}
           smooth={true}
@@ -30,7 +29,7 @@ export default function Navbar() {
           CASOS
         </Link>
         <Link
-          to="services"
+          to="contacts"
           activeClass="active"
           spy={true}
           smooth={true}

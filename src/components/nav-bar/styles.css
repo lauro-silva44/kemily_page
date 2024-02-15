@@ -10,6 +10,8 @@ nav {
   gap: 40px;
   width: 100%;
   justify-content: flex-end;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--golden-yellow);
 }
 
 a:hover {
@@ -19,12 +21,12 @@ a:hover {
 }
 
 .logo {
-  color: var(--golden-yellow);
-  font-weight: bolder;
+  height: 64px;
+  width: auto; 
+  border: none;
+  margin-right: 40px;
 }
 
 .wrapper {
-  display: flex;
-  padding-bottom: 30px;
-  border-bottom: 2px solid var(--golden-yellow);
+  display: flex; 
 }

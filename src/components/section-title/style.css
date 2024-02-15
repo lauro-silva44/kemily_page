@@ -1,0 +1,11 @@
+.title {
+  font-size: 188px;
+  color: var(--golden-yellow);
+  font-family: inherit;
+  text-wrap: wrap;
+  text-overflow: hidden;
+}
+
+.title_wrapper {
+  width: 30%;
+}
