@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import './style.css'; // Import your CSS file for styling
-import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+import React, { useState, useEffect } from "react";
+import "./style.css"; // Import your CSS file for styling
+import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,27 +13,29 @@ const ScrollToTopButton = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <button
-      className={`scroll-to-top-button ${isVisible ? 'visible' : 'hidden'}`}
-      onClick={scrollToTop}
-    >
-      <KeyboardArrowUpOutlinedIcon/>
-    </button>
+    isVisible && (
+      <button
+        className={`scroll-to-top-button ${isVisible ? "visible" : "hidden"}`}
+        onClick={scrollToTop}
+      >
+        <KeyboardArrowUpOutlinedIcon />
+      </button>
+    )
   );
 };
 

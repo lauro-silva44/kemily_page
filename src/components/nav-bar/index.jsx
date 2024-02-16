@@ -1,11 +1,9 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import Logo from "../../assets/images/symbol.png";
+import { Link} from "react-scroll";
+import Logo from "../../assets/images/logo.svg";
 import "./styles.css";
 export default function Navbar() {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+
   return (
     <div className="wrapper">
         <img className="logo" src={Logo} alt="logo" />

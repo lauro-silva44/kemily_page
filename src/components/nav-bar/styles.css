@@ -3,7 +3,7 @@ a {
   color:var(--white);
   font-size: 20px;
   font-weight: 500;
-  transition:color,   ease-in-out 0.3s ;
+  transition:color, transform,  ease-in-out 0.3s ;
 }
 nav {
   display: flex;
@@ -16,8 +16,8 @@ nav {
 
 a:hover {
   cursor: pointer;
-  color:var(--golden-yellow)
-  
+  color:var(--golden-yellow);
+  transform: translateY(-2px);
 }
 
 .logo {
